@@ -306,6 +306,9 @@
 						<div class="flex items-center justify-between px-2 pt-2 pb-2 shrink-0">
 							<div class="flex gap-1 min-w-0 overflow-x-auto scrollbar-hidden">
 								{#if showControlsTab}
+									<button on:click={() => (activeTab = 'graph')}>
+									  Graph
+									</button>
 									<button
 										class="px-2.5 py-1 text-sm rounded-lg transition whitespace-nowrap {activeTab ===
 										'controls'
