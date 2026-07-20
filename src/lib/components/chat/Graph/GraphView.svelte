@@ -1,7 +1,7 @@
-import EntityNode from './EntityNode.svelte';
-
 <script>
   import { SvelteFlow, Controls, Panel, Background } from '@xyflow/svelte';
+  import EntityNode from './EntityNode.svelte';
+
   import '@xyflow/svelte/dist/style.css';
   import { graphData } from '$lib/stores/graph';
   import dagre from '@dagrejs/dagre'; // npm install @dagrejs/dagre — auto-layout, since xyflow doesn't compute positions
