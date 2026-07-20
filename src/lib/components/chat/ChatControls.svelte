@@ -1,4 +1,4 @@
-import GraphView from './GraphView.svelte';
+import GraphView from './Graph/GraphView.svelte';
 
 <script context="module" lang="ts">
 	let savedTab: 'controls' | 'files' | 'overview' = 'controls';
