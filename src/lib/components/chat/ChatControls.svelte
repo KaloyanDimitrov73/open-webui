@@ -1,3 +1,5 @@
+import GraphView from './GraphView.svelte';
+
 <script context="module" lang="ts">
 	let savedTab: 'controls' | 'files' | 'overview' = 'controls';
 </script>
@@ -380,6 +382,8 @@
 								<FileNav onAttach={handleTerminalAttach} {chatId} />
 							{:else if activeTab === 'files' && codeInterpreterEnabled}
 								<PyodideFileNav />
+							{:else if activeTab === 'graph'}
+							    <GraphView />
 							{:else}
 								<Controls embed={true} {models} bind:chatFiles bind:params />
 							{/if}
