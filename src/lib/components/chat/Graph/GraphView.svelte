@@ -1,3 +1,5 @@
+import EntityNode from './EntityNode.svelte';
+
 <script>
   import { SvelteFlow, Controls, Panel, Background } from '@xyflow/svelte';
   import '@xyflow/svelte/dist/style.css';
